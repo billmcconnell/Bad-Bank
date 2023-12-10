@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Card } from "./context";
 
-const baseUrl = '';
-// const baseUrl = process.env.NODE_ENV === 'production' ? '' : 'http://localhost:5500';
+// const baseUrl = '';
+const baseUrl = process.env.NODE_ENV === 'production' ? '' : 'http://localhost:5500';
 
 export function AllData() {
     const [data, setData] = useState('');
